@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'augu';
+    src: url('..\fonts\AUGUSTUS.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'roma' ;
+    src: url('../fonts/ROMANUS.otf');
+}
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'augu', 'cursive';
+    --font3: 'roma', 'cursive';
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: aqua;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 3em;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-family: var(--font3);
+    font-size: 1.3em;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+#img01{
+    background-image: url('../imagens/01.jpg');
+    background-size: cover;
+
+}
+
+#img02{
+    background-image: url('../imagens/02.jpg');
+    background-size: cover;
+
+}
+
+#img03 {
+    background-image: url('../imagens/03.jpg');
+    background-size: cover;
+
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.img {
+    background-color: rgb(65, 64, 64);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
+}
+
+section.img > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.568);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.541);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
